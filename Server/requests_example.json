@@ -1,9 +1,5 @@
-{
-  "actionId": 100,
-  "username": "test",
-  "first_name": "first",
-  "last_name": "",
-  "email": "test@gmail.com",
-  "password": "123321",
-  "public_key": "ThWmZq4t7w!z$C&F)J@NcRfUjXn2r5u8x/A?D*G-KaPdSgVkYp3s6v9y$B&E)H+MbQeThWmZq4t7w!z%C*F-JaNcRfUjXn2r5u8x/A?D(G+KbPeSgVkYp3s6v9y$B&E)"
-}
+{"device_hash":  "3e2e95f5ad970eadfa7e17eaf73da97024aa5359"}
+{"aid":  101, "login":  "test23", "password":  "123321"}
+{"aid":102, "auth_key":"3d87d0c8792d83f99e298499651d3551f386591841b2da58975ac1f85a2c453e"}
+{  "aid": 100,  "username": "test",  "first_name": "first",  "last_name": "",  "email": "test@gmail.com",  "password": "123321",  "public_key": "ThWmZq4t7w!z$C&F)J@NcRfUjXn2r5u8x/A?D*G-KaPdSgVkYp3s6v9y$B&E)H+MbQeThWmZq4t7w!z%C*F-JaNcRfUjXn2r5u8x/A?D(G+KbPeSgVkYp3s6v9y$B&E)"}
+{"aid":  106}

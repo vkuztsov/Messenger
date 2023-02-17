@@ -7,6 +7,8 @@ public class ErrorList {
     public final static int DB_USER_EXIST = 11;
     public final static int DB_EMAIL_EXIST = 12;
     public final static int DB_FAIL = 13;
+    public final static int UNAUTHORIZED_USER = 14;
+
 
 
 }

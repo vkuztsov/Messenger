@@ -6,8 +6,8 @@ CREATE TABLE "users" (
 	"email" varchar(52) NOT NULL,
 	"email_confirmed" BOOLEAN NOT NULL,
 	"password" varchar(64) NOT NULL,
-	"2fa_key" varchar(16),
-	"profile_photo_url" varchar(255),
+	"totp_secret" varchar(16),
+	"profile_photo_url" varchar(255) NOT NULL,
 	"user_pubkey" varchar(128) NOT NULL,
 	"registration_date" TIMESTAMP NOT NULL,
 	"registration_ip" varchar(15) NOT NULL,
@@ -20,7 +20,8 @@ CREATE TABLE "users" (
 
 CREATE TABLE "auth_keys" (
 	"user_id" integer NOT NULL,
-	"key" varchar(64) NOT NULL,
+	"initial_key" varchar(12) NOT NULL,
+	"auth_key" varchar(64) NOT NULL,
 	"user_ip" varchar(15) NOT NULL,
 	"last_visit" TIMESTAMP NOT NULL
 ) WITH (
@@ -57,6 +58,7 @@ CREATE TABLE "messages" (
 	"message" varchar(300) NOT NULL,
 	"attach_url" varchar(255) NOT NULL,
 	"created_at" TIMESTAMP NOT NULL,
+	"readed" BOOLEAN NOT NULL,
 	CONSTRAINT "messages_pk" PRIMARY KEY ("id")
 ) WITH (
   OIDS=FALSE
@@ -74,7 +76,10 @@ CREATE TABLE "chat_members" (
 
 
 
-
-
-
+CREATE TABLE "email_confirmation_codes" (
+	"user_id" integer NOT NULL,
+	"code" varchar(12) NOT NULL
+) WITH (
+  OIDS=FALSE
+);
 
